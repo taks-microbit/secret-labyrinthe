@@ -1,0 +1,13 @@
+{
+  "name": "secret-labyrinthe",
+  "version": "0.1.0",
+  "description": "Un super jeu avec des minotaures, des dragons, des labyrinthes...",
+  "scripts": {
+    "prepare": "rm -rf ./dist && cp -r ./src/public ./dist",
+    "build": "npm run prepare && tsc"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
