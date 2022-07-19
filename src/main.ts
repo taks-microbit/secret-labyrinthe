@@ -11,13 +11,30 @@ let monde: Case[][] = [
     {
       type: "vide",
     },
+    {
+      type: "mur",
+    },
   ],
   [
+    {
+      type: "mur",
+    },
     {
       type: "vide",
     },
     {
+      type: "vide",
+    },
+  ],
+  [
+    {
       type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "vide",
     },
   ],
 ];
