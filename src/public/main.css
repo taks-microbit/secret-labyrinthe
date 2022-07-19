@@ -2,4 +2,19 @@
   width: 600px;
   height: 400px;
   background-color: chartreuse;
+  position: absolute;
+}
+
+.case {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+}
+
+.mur {
+  background-color: khaki;
+}
+
+.vide {
+  background-color: rgb(143, 65, 34);
 }
