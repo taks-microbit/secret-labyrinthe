@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
     "module": "es6",
     "target": "es6",
     "moduleResolution": "node",
     "sourceMap": false,
     "outDir": "dist",
     "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
     "strictNullChecks": true,
   },
   "include": ["src/**/*"]
