@@ -95,8 +95,6 @@ export const monde: Case[][] = [
     { type: "mur" },
     { type: "sol" },
     { type: "mur" },
-    { type: "vide" },
-    { type: "vide" },
   ],
   [
     /* ligne 7: */
@@ -112,7 +110,6 @@ export const monde: Case[][] = [
     { type: "mur" },
     { type: "mur" },
     { type: "mur" },
-    { type: "vide" },
   ],
   [
     /* ligne 8: */
@@ -144,6 +141,63 @@ export const monde: Case[][] = [
     { type: "sol" },
     { type: "sol" },
     { type: "sol" },
+    { type: "mur" },
+  ],
+  [
+    /* ligne 10: */
+    { type: "vide" },
+    { type: "vide" },
+    { type: "vide" },
+    { type: "mur" },
+    { type: "sol" },
+    { type: "sol" },
+    { type: "sol" },
+    { type: "mur" },
+    { type: "sol" },
+    { type: "mur" },
+    { type: "mur" },
+    { type: "sol" },
+    { type: "mur" },
+  ],
+  [
+    /* ligne 11: */
+    { type: "vide" },
+    { type: "vide" },
+    { type: "vide" },
+    { type: "mur" },
+    { type: "sol" },
+    { type: "mur" },
+    { type: "mur" },
+    { type: "mur" },
+    { type: "sol" },
+    { type: "mur" },
+    { type: "vide" },
+    { type: "mur" },
+  ],
+  [
+    /* ligne 12: */
+    { type: "vide" },
+    { type: "vide" },
+    { type: "vide" },
+    { type: "mur" },
+    { type: "sol" },
+    { type: "sol" },
+    { type: "sol" },
+    { type: "mur" },
+    { type: "sol" },
+    { type: "mur" },
+  ],
+  [
+    /* ligne 13: */
+    { type: "vide" },
+    { type: "vide" },
+    { type: "vide" },
+    { type: "mur" },
+    { type: "mur" },
+    { type: "mur" },
+    { type: "mur" },
+    { type: "mur" },
+    { type: "mur" },
     { type: "mur" },
   ],
 ];
