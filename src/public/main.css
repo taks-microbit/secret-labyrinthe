@@ -1,6 +1,4 @@
 #plateau {
-  width: 600px;
-  height: 400px;
   background-color: chartreuse;
   position: absolute;
 }
@@ -15,6 +13,9 @@
   background-color: rgb(49, 18, 18);
 }
 
-.vide {
+.sol {
   background-color: rgb(124, 124, 124);
+}
+.vide {
+  background-color: chartreuse;
 }
