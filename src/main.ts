@@ -1,6 +1,7 @@
 import * as $ from "jquery";
 import { style } from "typestyle";
 import { monde } from "data/monde";
+import { ZoneTexte } from "zoneTexte";
 
 const tailleCase = 64;
 const cssCase = style({
@@ -9,11 +10,12 @@ const cssCase = style({
   position: "absolute",
 });
 
-const hauteur = monde.length;
-const largeur = Math.max(...monde.map((ligne) => ligne.length));
-$("#plateau").css("width", largeur * tailleCase);
-$("#plateau").css("height", hauteur * tailleCase);
-
+const zoneTexte = new ZoneTexte();
+zoneTexte.ajoutTexte(`
+Bonjour !
+Comment vous appellez-vous ?
+<input type="text" name="nom" id="nom"/>
+`);
 function cssCasePosition(x: number, y: number) {
   return `"top: ${y * tailleCase}px; left: ${x * tailleCase}px;"`;
 }
@@ -32,6 +34,7 @@ function afficher() {
     }
     y++;
   }
+  zoneTexte.afficher();
 }
 
 afficher();

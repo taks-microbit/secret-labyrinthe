@@ -171,7 +171,8 @@ export const monde: Case[][] = [
     { type: "mur" },
     { type: "sol" },
     { type: "mur" },
-    { type: "vide" },
+    { type: "mur" },
+    { type: "mur" },
     { type: "mur" },
   ],
   [

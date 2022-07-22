@@ -1,6 +1,13 @@
 #plateau {
   background-color: chartreuse;
   position: absolute;
+  width: 66%;
+}
+
+#zoneTexte {
+  position: absolute;
+  left: 66%;
+  width: 34%;
 }
 
 .case {
