@@ -1,3 +1,5 @@
+export type TypeCase = "mur" | "sol" | "porte" | "herbe";
+
 export type Case = {
-  type: string;
+  type: TypeCase;
 };

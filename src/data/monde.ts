@@ -2,10 +2,9 @@ import { Case } from "types/monde";
 
 export const monde: Case[][] = [
   [
-    /* Ligne 1: */ { type: "mur" },
-    {
-      type: "sol",
-    },
+    /* Ligne 1: */
+    { type: "mur" },
+    { type: "mur" },
     {
       type: "mur",
     },
@@ -36,9 +35,7 @@ export const monde: Case[][] = [
     {
       type: "mur",
     },
-    {
-      type: "sol",
-    },
+    { type: "porte" },
     { type: "mur" },
     { type: "sol" },
     { type: "mur" },
@@ -52,9 +49,9 @@ export const monde: Case[][] = [
   ],
   [
     /* ligne 4: */
-    { type: "vide" },
-    { type: "vide" },
-    { type: "vide" },
+    { type: "herbe" },
+    { type: "herbe" },
+    { type: "herbe" },
     { type: "mur" },
     { type: "sol" },
     { type: "sol" },
@@ -68,9 +65,9 @@ export const monde: Case[][] = [
   ],
   [
     /* ligne 5: */
-    { type: "vide" },
-    { type: "vide" },
-    { type: "vide" },
+    { type: "herbe" },
+    { type: "herbe" },
+    { type: "herbe" },
     { type: "mur" },
     { type: "sol" },
     { type: "mur" },
@@ -84,9 +81,9 @@ export const monde: Case[][] = [
   ],
   [
     /* ligne 6: */
-    { type: "vide" },
-    { type: "vide" },
-    { type: "vide" },
+    { type: "herbe" },
+    { type: "herbe" },
+    { type: "herbe" },
     { type: "mur" },
     { type: "sol" },
     { type: "mur" },
@@ -98,9 +95,9 @@ export const monde: Case[][] = [
   ],
   [
     /* ligne 7: */
-    { type: "vide" },
-    { type: "vide" },
-    { type: "vide" },
+    { type: "herbe" },
+    { type: "herbe" },
+    { type: "herbe" },
     { type: "mur" },
     { type: "sol" },
     { type: "mur" },
@@ -113,9 +110,9 @@ export const monde: Case[][] = [
   ],
   [
     /* ligne 8: */
-    { type: "vide" },
-    { type: "vide" },
-    { type: "vide" },
+    { type: "herbe" },
+    { type: "herbe" },
+    { type: "herbe" },
     { type: "mur" },
     { type: "sol" },
     { type: "mur" },
@@ -129,9 +126,9 @@ export const monde: Case[][] = [
   ],
   [
     /* ligne 9: */
-    { type: "vide" },
-    { type: "vide" },
-    { type: "vide" },
+    { type: "herbe" },
+    { type: "herbe" },
+    { type: "herbe" },
     { type: "mur" },
     { type: "sol" },
     { type: "mur" },
@@ -145,9 +142,9 @@ export const monde: Case[][] = [
   ],
   [
     /* ligne 10: */
-    { type: "vide" },
-    { type: "vide" },
-    { type: "vide" },
+    { type: "herbe" },
+    { type: "herbe" },
+    { type: "herbe" },
     { type: "mur" },
     { type: "sol" },
     { type: "sol" },
@@ -161,9 +158,9 @@ export const monde: Case[][] = [
   ],
   [
     /* ligne 11: */
-    { type: "vide" },
-    { type: "vide" },
-    { type: "vide" },
+    { type: "herbe" },
+    { type: "herbe" },
+    { type: "herbe" },
     { type: "mur" },
     { type: "sol" },
     { type: "mur" },
@@ -177,9 +174,9 @@ export const monde: Case[][] = [
   ],
   [
     /* ligne 12: */
-    { type: "vide" },
-    { type: "vide" },
-    { type: "vide" },
+    { type: "herbe" },
+    { type: "herbe" },
+    { type: "herbe" },
     { type: "mur" },
     { type: "sol" },
     { type: "sol" },
@@ -190,9 +187,9 @@ export const monde: Case[][] = [
   ],
   [
     /* ligne 13: */
-    { type: "vide" },
-    { type: "vide" },
-    { type: "vide" },
+    { type: "herbe" },
+    { type: "herbe" },
+    { type: "herbe" },
     { type: "mur" },
     { type: "mur" },
     { type: "mur" },

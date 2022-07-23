@@ -16,6 +16,10 @@
   position: absolute;
 }
 
+.porte {
+  background-image: url("images/porte-01.png");
+}
+
 .mur {
   background-image: url("images/mur-01.png");
 }
@@ -23,6 +27,6 @@
 .sol {
   background-image: url("images/sol-01.png");
 }
-.vide {
-  background-color: chartreuse;
+.herbe {
+  background-image: url("images/herbe-01.png");
 }
