@@ -17,11 +17,11 @@
 }
 
 .mur {
-  background-color: rgb(49, 18, 18);
+  background-image: url("images/mur-01.png");
 }
 
 .sol {
-  background-color: rgb(124, 124, 124);
+  background-image: url("images/sol-01.png");
 }
 .vide {
   background-color: chartreuse;
