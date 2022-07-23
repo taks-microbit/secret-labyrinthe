@@ -1,19 +1,72 @@
-import { Case } from "types/monde";
+import { Case } from "types/case";
 
-export const monde: Case[][] = [
+const largeur = 20;
+const hauteur = 20;
+
+const casesTmp: Case[][] = [
   [
-    /* Ligne 1: */
-    { type: "mur" },
-    { type: "mur" },
     {
       type: "mur",
     },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "porte",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
   ],
   [
-    /* ligne 2: */
     {
       type: "mur",
     },
@@ -23,179 +76,1187 @@ export const monde: Case[][] = [
     {
       type: "sol",
     },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "mur" },
-  ],
-  [
-    /* ligne 3: */
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
     {
       type: "mur",
     },
     {
       type: "mur",
     },
-    { type: "porte" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
   ],
   [
-    /* ligne 4: */
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "mur" },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "porte",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
   ],
   [
-    /* ligne 5: */
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
   ],
   [
-    /* ligne 6: */
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
   ],
   [
-    /* ligne 7: */
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "porte",
+    },
+    {
+      type: "sol",
+    },
   ],
   [
-    /* ligne 8: */
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "mur" },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "porte",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
   ],
   [
-    /* ligne 9: */
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "mur" },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
   ],
   [
-    /* ligne 10: */
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
   ],
   [
-    /* ligne 11: */
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "porte",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
   ],
   [
-    /* ligne 12: */
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "sol" },
-    { type: "mur" },
-    { type: "sol" },
-    { type: "mur" },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
   ],
   [
-    /* ligne 13: */
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "herbe" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
-    { type: "mur" },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+  ],
+  [
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+  ],
+  [
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "sol",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+  ],
+  [
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "mur",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+  ],
+  [
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+  ],
+  [
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+  ],
+  [
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+  ],
+  [
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+  ],
+  [
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
+    {
+      type: "herbe",
+    },
   ],
 ];
+
+export function initCases(): Case[][] {
+  const cases = new Array<Case[]>(hauteur);
+  for (let y = 0; y < hauteur; y++) {
+    cases[y] = new Array<Case>(largeur);
+    for (let x = 0; x < largeur; x++) {
+      if (y < casesTmp.length && x < casesTmp[y].length) {
+        cases[y][x] = casesTmp[y][x];
+      } else {
+        cases[y][x] = { type: "herbe" };
+      }
+    }
+  }
+  return cases;
+}
