@@ -1,4 +1,6 @@
+import { gestionClavier } from "clavier";
 import { initCases } from "data/monde";
+import { Joueur } from "joueur";
 import { Monde } from "monde";
 import { ZoneTexte } from "zoneTexte";
 
@@ -8,6 +10,8 @@ const modeConstruction = mode === "construction";
 
 const monde = new Monde(initCases());
 const zoneTexte = new ZoneTexte();
+const joueur = new Joueur(1, 6);
+gestionClavier(joueur, monde);
 
 if (modeConstruction) {
   zoneTexte.ajoutTexte("<i>MODE CONSTRUCTION ACTIVÉ</i>");
@@ -22,3 +26,5 @@ Comment vous appellez-vous ?<br/>
 
 monde.afficher();
 zoneTexte.afficher();
+joueur.afficher();
+joueur.afficherMondeVisible();

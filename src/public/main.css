@@ -11,9 +11,12 @@
 }
 
 .case {
-  width: 64px;
-  height: 64px;
   position: absolute;
+}
+
+.inconnu {
+  background-image: initial !important;
+  background-color: black;
 }
 
 .porte {
@@ -27,6 +30,12 @@
 .sol {
   background-image: url("images/sol-01.png");
 }
+
 .herbe {
   background-image: url("images/herbe-01.png");
+}
+
+.heros {
+  position: absolute;
+  background-image: url("images/heros.png");
 }
