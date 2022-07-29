@@ -30,11 +30,23 @@ export class Joueur {
         $(`#case_${posx}_${posy}`).removeClass("inconnu");
       }
     }
+
+    for (let y = -this.vision; y <= this.vision; y++) {
+      let xGauche = this.positionX - this.vision;
+      let xDroite = this.positionX + this.vision;
+    }
+
+    for (let x = -this.vision; x <= this.vision; x++) {
+      let yGauche = this.positionY - this.vision;
+      let yDroite = this.positionY + this.vision;
+    }
   }
 
   public deplacementHaut(monde: Monde) {
-    // A FAIRE: verifier qu'il n'y ait pas un mur en haut
-    if (this.positionY > 0) {
+    if (
+      this.positionY > 0 &&
+      monde.deplacementAutaurise(this.positionX, this.positionY - 1)
+    ) {
       this.positionY--;
       this.afficher();
       this.afficherMondeVisible();
@@ -42,8 +54,10 @@ export class Joueur {
   }
 
   public deplacementBas(monde: Monde) {
-    // A FAIRE: verifier qu'il n'y ait pas un mur en bas
-    if (this.positionY < monde.hauteur - 1) {
+    if (
+      this.positionY < monde.hauteur - 1 &&
+      monde.deplacementAutaurise(this.positionX, this.positionY + 1)
+    ) {
       this.positionY++;
       this.afficher();
       this.afficherMondeVisible();
@@ -51,8 +65,10 @@ export class Joueur {
   }
 
   public deplacementGauche(monde: Monde) {
-    // A FAIRE: verifier qu'il n'y ait pas un mur à gauche
-    if (this.positionX > 0) {
+    if (
+      this.positionX > 0 &&
+      monde.deplacementAutaurise(this.positionX - 1, this.positionY)
+    ) {
       this.positionX--;
       this.afficher();
       this.afficherMondeVisible();
@@ -60,8 +76,10 @@ export class Joueur {
   }
 
   public deplacementDroite(monde: Monde) {
-    // A FAIRE: verifier qu'il n'y ait pas un mur à droite
-    if (this.positionX < monde.largeur - 1) {
+    if (
+      this.positionX < monde.largeur - 1 &&
+      monde.deplacementAutaurise(this.positionX + 1, this.positionY)
+    ) {
       this.positionX++;
       this.afficher();
       this.afficherMondeVisible();

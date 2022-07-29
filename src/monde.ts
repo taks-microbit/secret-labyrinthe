@@ -52,4 +52,8 @@ export class Monde {
       }
     }
   }
+  public deplacementAutaurise(x: number, y: number): boolean {
+    const type = this.cases[y][x].type;
+    return !(type === "mur"); //type === "herbe" || type === "sol" || type === "porte";
+  }
 }
