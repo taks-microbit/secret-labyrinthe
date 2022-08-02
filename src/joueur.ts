@@ -31,7 +31,7 @@ export class Joueur {
       }
     }
 
-    for (let y = -this.vision; y <= this.vision; y++) {
+    /*for (let y = -this.vision; y <= this.vision; y++) {
       let xGauche = this.positionX - this.vision;
       let xDroite = this.positionX + this.vision;
     }
@@ -39,7 +39,7 @@ export class Joueur {
     for (let x = -this.vision; x <= this.vision; x++) {
       let yGauche = this.positionY - this.vision;
       let yDroite = this.positionY + this.vision;
-    }
+    }*/
   }
 
   public deplacementHaut(monde: Monde) {

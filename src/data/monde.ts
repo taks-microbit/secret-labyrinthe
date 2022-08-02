@@ -5,1243 +5,1648 @@ const hauteur = 20;
 
 const casesTmp: Case[][] = [
   [
+    /* 1 */
     {
       type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "porte",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-  ],
-  [
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-  ],
-  [
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
+      objets: [],
     },
     {
       type: "porte",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
-      type: "sol",
+      type: "herbe",
+      objets: [],
     },
     {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
+      type: "herbe",
+      objets: [],
     },
   ],
   [
+    /* 2 */
     {
-      type: "herbe",
+      type: "mur",
+      objets: [],
     },
     {
-      type: "herbe",
+      type: "sol",
+      objets: [],
     },
     {
-      type: "herbe",
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
     {
       type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
   ],
   [
+    /* 3 */
     {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
+      type: "mur",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-  ],
-  [
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
+      objets: [],
     },
     {
       type: "porte",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+  ],
+  [
+    /* 4 */
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+  ],
+  [
+    /* 5 */
+    {
+      type: "herbe",
+      objets: ["clef"],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
     },
   ],
   [
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
     },
     {
       type: "porte",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
   ],
   [
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "sol",
-    },
-  ],
-  [
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "sol",
-    },
-  ],
-  [
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "mur",
+      objets: [],
     },
     {
       type: "porte",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
   ],
   [
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
     },
     {
       type: "sol",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
   ],
   [
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
     },
     {
       type: "sol",
-    },
-    {
-      type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
+      type: "sol",
+      objets: [],
     },
   ],
   [
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
+      objets: [],
     },
     {
       type: "sol",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
-    },
-    {
-      type: "mur",
+      objets: [],
     },
     {
       type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
-      type: "herbe",
+      type: "sol",
+      objets: [],
     },
     {
-      type: "herbe",
+      type: "mur",
+      objets: [],
     },
     {
-      type: "herbe",
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "porte",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
     },
   ],
   [
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
-    },
-    {
-      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
-      type: "herbe",
+      type: "mur",
+      objets: [],
     },
     {
-      type: "herbe",
+      type: "mur",
+      objets: [],
     },
     {
-      type: "herbe",
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
     },
   ],
   [
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
+      objets: [],
     },
     {
       type: "mur",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
+      objets: [],
     },
   ],
   [
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-  ],
-  [
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
+      objets: [],
     },
   ],
   [
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "sol",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-  ],
-  [
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
-    },
-    {
-      type: "herbe",
+      objets: [],
     },
   ],
   [
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
+    },
+    {
+      type: "mur",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
+    },
+  ],
+  [
+    {
+      type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
     },
     {
       type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+  ],
+  [
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+  ],
+  [
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+  ],
+  [
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+  ],
+  [
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
+    },
+    {
+      type: "herbe",
+      objets: [],
     },
   ],
 ];
@@ -1254,7 +1659,7 @@ export function initCases(): Case[][] {
       if (y < casesTmp.length && x < casesTmp[y].length) {
         cases[y][x] = casesTmp[y][x];
       } else {
-        cases[y][x] = { type: "herbe" };
+        cases[y][x] = { type: "herbe", objets: [] };
       }
     }
   }
