@@ -46,14 +46,26 @@ export class Monde {
             (typesCases.indexOf(ancienType) + 1) % typesCases.length;
           const nouveauType = typesCases[nouvelIndex];
           this.cases[y][x].type = nouveauType;
-          console.log(this.cases);
           this.afficher();
         });
       }
     }
   }
-  public deplacementAutaurise(x: number, y: number): boolean {
+
+  public deplacementAutorise(x: number, y: number): boolean {
+    if (!this.caseValide(x, y)) {
+      return false;
+    }
     const type = this.cases[y][x].type;
     return !(type === "mur"); //type === "herbe" || type === "sol" || type === "porte";
+  }
+
+  public caseBloqueVision(x: number, y: number): boolean {
+    const type = this.cases[y][x].type;
+    return type === "mur";
+  }
+
+  public caseValide(x: number, y: number): boolean {
+    return x >= 0 && y >= 0 && x < this.largeur && y < this.hauteur;
   }
 }

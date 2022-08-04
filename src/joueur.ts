@@ -1,6 +1,7 @@
 import * as $ from "jquery";
 import { Monde, tailleCase } from "monde";
 import { style } from "typestyle";
+import { afficherMondeVisible } from "vision";
 
 const cssHeros = style({
   width: tailleCase,
@@ -14,75 +15,40 @@ export class Joueur {
     $("#plateau").append(`<div id="heros" class="heros ${cssHeros}"></div>`);
   }
 
-  public afficher() {
+  public afficher(monde: Monde) {
     const st = `top: ${this.positionY * tailleCase}px; left: ${
       this.positionX * tailleCase
     }px;`;
     $("#heros").attr("style", st);
-  }
 
-  public afficherMondeVisible() {
-    $(".case").addClass("inconnu");
-    for (let y = -this.vision; y <= this.vision; y++) {
-      const posy = this.positionY + y;
-      for (let x = -this.vision; x <= this.vision; x++) {
-        const posx = this.positionX + x;
-        $(`#case_${posx}_${posy}`).removeClass("inconnu");
-      }
-    }
-
-    /*for (let y = -this.vision; y <= this.vision; y++) {
-      let xGauche = this.positionX - this.vision;
-      let xDroite = this.positionX + this.vision;
-    }
-
-    for (let x = -this.vision; x <= this.vision; x++) {
-      let yGauche = this.positionY - this.vision;
-      let yDroite = this.positionY + this.vision;
-    }*/
+    afficherMondeVisible(monde, this.vision, this.positionX, this.positionY);
   }
 
   public deplacementHaut(monde: Monde) {
-    if (
-      this.positionY > 0 &&
-      monde.deplacementAutaurise(this.positionX, this.positionY - 1)
-    ) {
+    if (monde.deplacementAutorise(this.positionX, this.positionY - 1)) {
       this.positionY--;
-      this.afficher();
-      this.afficherMondeVisible();
+      this.afficher(monde);
     }
   }
 
   public deplacementBas(monde: Monde) {
-    if (
-      this.positionY < monde.hauteur - 1 &&
-      monde.deplacementAutaurise(this.positionX, this.positionY + 1)
-    ) {
+    if (monde.deplacementAutorise(this.positionX, this.positionY + 1)) {
       this.positionY++;
-      this.afficher();
-      this.afficherMondeVisible();
+      this.afficher(monde);
     }
   }
 
   public deplacementGauche(monde: Monde) {
-    if (
-      this.positionX > 0 &&
-      monde.deplacementAutaurise(this.positionX - 1, this.positionY)
-    ) {
+    if (monde.deplacementAutorise(this.positionX - 1, this.positionY)) {
       this.positionX--;
-      this.afficher();
-      this.afficherMondeVisible();
+      this.afficher(monde);
     }
   }
 
   public deplacementDroite(monde: Monde) {
-    if (
-      this.positionX < monde.largeur - 1 &&
-      monde.deplacementAutaurise(this.positionX + 1, this.positionY)
-    ) {
+    if (monde.deplacementAutorise(this.positionX + 1, this.positionY)) {
       this.positionX++;
-      this.afficher();
-      this.afficherMondeVisible();
+      this.afficher(monde);
     }
   }
 }

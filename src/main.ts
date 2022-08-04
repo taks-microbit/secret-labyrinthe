@@ -26,5 +26,4 @@ Comment vous appellez-vous ?<br/>
 
 monde.afficher();
 zoneTexte.afficher();
-joueur.afficher();
-joueur.afficherMondeVisible();
+joueur.afficher(monde);
