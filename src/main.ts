@@ -1,7 +1,7 @@
 import { gestionClavier } from "clavier";
-import { initCases } from "data/monde";
+import { initCases } from "data/monde-DATA";
 import { Joueur } from "joueur";
-import { Monde } from "monde";
+import { Monde } from "monde-MAIN";
 import { ZoneTexte } from "zoneTexte";
 
 const params = new URLSearchParams(window.location.search);

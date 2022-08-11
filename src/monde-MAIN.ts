@@ -21,6 +21,11 @@ export class Monde {
         const id = `case_${x}_${y}`;
         const st = `top: ${y * tailleCase}px; left: ${x * tailleCase}px;`;
         $("#plateau").append(`<div id="${id}" style="${st}"></div>`);
+        for (const objet of cases[y][x].objets) {
+          $("#plateau").append(
+            `<div style="${st}" class="objet ${cssCase} ${objet}"></div>`
+          );
+        }
       }
     }
   }
@@ -30,7 +35,9 @@ export class Monde {
       for (let x = 0; x < this.cases[y].length; x++) {
         $(`#case_${x}_${y}`).attr(
           "class",
-          `case ${cssCase} ${this.cases[y][x].type}`
+          `case ${cssCase} ${this.cases[y][x].type} ` /*${this.cases[y][
+            x
+          ].objets.join(" ")}*/
         );
       }
     }

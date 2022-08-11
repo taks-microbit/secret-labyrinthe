@@ -257,7 +257,7 @@ const casesTmp: Case[][] = [
     /* 4 */
     {
       type: "herbe",
-      objets: [],
+      objets: ["clef"],
     },
     {
       type: "herbe",
@@ -340,7 +340,7 @@ const casesTmp: Case[][] = [
     /* 5 */
     {
       type: "herbe",
-      objets: ["clef"],
+      objets: ["clef", "rhum"],
     },
     {
       type: "herbe",

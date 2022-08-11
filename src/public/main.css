@@ -10,13 +10,22 @@
   width: 34%;
 }
 
-.case {
+.case,
+.objet {
   position: absolute;
+}
+
+.clef {
+  background-image: url("images/clef-01.png");
 }
 
 .inconnu {
   background-image: initial !important;
   background-color: black;
+}
+
+.rhum {
+  background-image: url("images/rhum-01.png");
 }
 
 .porte {

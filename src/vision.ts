@@ -1,5 +1,5 @@
 import * as $ from "jquery";
-import { Monde, tailleCase } from "monde";
+import { Monde, tailleCase } from "monde-MAIN";
 
 export function afficherMondeVisible(
   monde: Monde,
